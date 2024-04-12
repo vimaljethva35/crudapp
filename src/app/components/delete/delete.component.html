@@ -1,0 +1,13 @@
+<form #profileData="ngForm" (ngSubmit)="delet(profileData.value)" class="w-50
+mx-auto">
+<!--Product id-->
+<div class="form-group">
+<label>Product ID</label>
+<input type="number" class="form-control" name="p_id" ngModel>
+</div>
+<!--Submit-->
+<div class="form-group" align="center">
+<input type="submit" class="btn btn-success" value="Delete">
+</div>
+</form>
+{{data.delete}}

@@ -1,0 +1,15 @@
+<table class="table table-bordered table-warning table-hover table-stripedw-50 mx-auto mt-2">
+<thead>
+<th>P_id</th>
+<th>P_name</th>
+<th>P_cost</th>
+</thead>
+<tbody>
+<tr *ngFor = "let x of data">
+<td>{{x.p_id}} </td>
+<td>{{x.p_name}} </td>
+<td>{{x.p_cost}} </td>
+</tr>
+</tbody>
+</table>
+<h1 class="text-success">{{loading}} </h1>

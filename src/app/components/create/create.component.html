@@ -1,0 +1,25 @@
+<form #profileData="ngForm" (ngSubmit)="create(profileData.value)">
+    <!--<form #profileData="ngForm" (ngSubmit)="update(profileData.value)">-->
+    <!--Product id-->
+    <div class="form-group">
+    <label>Product ID</label>
+    <input type="number" class="form-control" name="p_id" ngModel>
+    </div>
+    <!--Product name-->
+    <div class="form-group">
+    <label>Product Name</label>
+    <input type="text" class="form-control" name="p_name" ngModel>
+    </div>
+    <!--Product cost-->
+    <div class="form-group">
+    <label>Product Cost</label>
+    <input type="number" class="form-control" name="p_cost" ngModel>
+    </div>
+    <!--Submit-->
+    <div class="form-group" align="center">
+    <input type="submit" class="btn btn-success" value="Create">
+    <!--<input type="submit" class="btn btn-success" value="Update">-->
+    </div>
+    </form>
+    <div class={{loading}}></div>
+    {{data|json}}
